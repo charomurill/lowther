@@ -1,0 +1,135 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* background-color: darkslategrey; */
+}
+#grad1 {
+    height: absolute;
+    background-color: black; /* For browsers that do not support gradients */
+    background-image: linear-gradient(black, darkslategrey);
+  }
+
+nav {
+    /* background-color: rgb(27, 22, 17); */
+    color: rgb(87, 81, 51);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo img.nav-icon {
+    width: 50px; /* Adjust the width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+nav .logo {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-left: 90%;
+}
+
+nav ul li {
+    margin-left: 2rem;
+    margin: 0 30px;
+    
+}
+    
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.item img {
+    width: 100px;
+    height: 520px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures that images cover the container without distorting */
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+    ;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 2rem;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.nosotros{
+    margin: 30px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.nosotros img {
+    width: 20%;
+    display:0;
+}
+
+.cerveza {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    text-align: center;
+}
+
+.cerveza img {
+    width: 100%;
+}
+
+.fabrica-imgs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fabrica-imgs img {
+    width: 20%;
+}
+
+.gringo-img{
+    width: 40%;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    padding: 0.5px;
+    font-family: open sans-serif;
+    font-size: 12px;
+}
+
+.centertext {
+    text-align: center;
+}
+
+.container {
+    display: flex; /* Usa flexbox para alinear la imagen y el texto en una fila */
+    align-items: center; /* Alinea verticalmente en el centro */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    padding: 20px;
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centra el contenedor en la página */
+}
