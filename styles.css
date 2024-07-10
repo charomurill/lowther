@@ -23,21 +23,24 @@ nav {
     align-items: center;
     text-align: center ;
     font-size: large;
+    height: 60px;
    
 }
-    button{
-    background-color: #ca6f32; /* Color de fondo */
-    border: none; /* Sin borde */
-    color: white; /* Color del texto */
-    padding: 15px 32px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
-    text-decoration: none; /* Sin subrayado */
-    display: inline-block; /* Mostrar en línea */
-    font-size: 16px; /* Tamaño de la fuente */
-    margin: 4px 2px; /* Margen */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    border-radius: 0px; /* Bordes redondeados */
 
+button{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background-color: #ca6f32;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300 ease;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 nav .logo img.nav-icon {
     width: 50px; /* Adjust the width */
@@ -45,27 +48,38 @@ nav .logo img.nav-icon {
 }
 
 nav .logo {
-    width: 50px;
-    margin: 0 auto;
-
+    padding-left: 145%
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    padding-left: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    padding-left: 20%;
 }
 
 nav ul li {
-    margin-left: 2rem;
-    margin: 0 30px;   
+   float: left;
+   margin-top: 20px; 
 }
     
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 20px;
+    text-align: center;
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    margin-left: 150px;
+    padding-top: 5px;
 }
 
 /* Personalización de la leyenda del carrusel */
@@ -117,7 +131,6 @@ section h2 {
     padding-left: 50px;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-    text-align:center;
 }
 
 .nosotros img {
@@ -141,25 +154,23 @@ section h2 {
     border-radius: 8px; /* Bordes redondeados */
 }
 .cerveza button{
-    background-color: #ca6f32; /* Color de fondo */
-    border: none; /* Sin borde */
-    color: white; /* Color del texto */
-    padding: 15px 32px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
-    text-decoration: none; /* Sin subrayado */
-    display: inline-block; /* Mostrar en línea */
-    font-size: 16px; /* Tamaño de la fuente */
-    margin: 4px 2px; /* Margen */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    border-radius: 0px; /* Bordes redondeados */
-
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background-color: #ca6f32;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300 ease;
+    
 }
 
 .locales-imgs {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    margin: 30px;
+    margin: auto;
     padding: 50px;
 }
 
@@ -180,11 +191,7 @@ section h2 {
     }
 
 .container-form{
-   
-    align-items: center; /* Alinea verticalmente en el centro */
-    gap: 20px; /* Espacio entre la imagen y el texto */
-    padding: 20px;
-    max-width: 50%; /* Ancho máximo del contenedor */
+    max-width: 40%; /* Ancho máximo del contenedor */
     margin: auto; /* Centra el contenedor en la página */
     }
     
@@ -196,18 +203,12 @@ section h2 {
         margin-bottom: 20px;
         border-radius: 3px;
         outline: 0px;
-        flex-wrap: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
     }
     
 .container-form form textarea{
-        max-width: 918px;
-        max-width: 530px;
-        min-height: 140px;
-        max-height: 150px;
-        flex-wrap: nowrap;
-        width: 100%;
-        height: 250%;
-    }
+    min-height: 140px;
+}
     
 .container-form .btn-enviar{
         padding: 15px;
@@ -219,24 +220,37 @@ section h2 {
         border-radius: 3px;
         cursor: pointer;
         transition: all 300 ease;
-        flex-wrap: nowrap;
     }
     
 .container-form .btn-enviar{
         background-color: #ca6f32;
-        flex-wrap: nowrap;
     }
+
+footer {
+    background-color: #ca6f32;  
+    color: #0e0e0e;
+    text-align: center;
+    bottom: 0;
+    padding: 25px;
+    font-size: 12px;
+}
 
 .centertext {
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 10px 10px;
 }
+
 
 .container {
     display: flex; /* Usa flexbox para alinear la imagen y el texto en una fila */
     align-items: center; /* Alinea verticalmente en el centro */
-    gap: 20px; /* Espacio entre la imagen y el texto */
-    padding: 20px;
-    max-width: 80%; /* Ancho máximo del contenedor */
+    gap: 40px; /* Espacio entre la imagen y el texto */
+    padding: 30px;
+    max-width: 70%; /* Ancho máximo del contenedor */
     margin: auto; /* Centra el contenedor en la página */
 }
 
@@ -248,16 +262,17 @@ section h2 {
     max-width: 50%; /* Ancho máximo del contenedor */
     margin: auto; /* Centra el contenedor en la página */
 }
-footer{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+
+.destacado{
+    color: #ca6f32;
+    font-size: larger;
 }
-footer {
-    background-color: rgb(95, 75, 32);
-    color: #c5c3c3;
+
+.titulos{
+    color: beige;
+    font-size: 40px;
+}
+
+.item{
     text-align: center;
-    bottom: 0;
-    padding: 0.5px;
-    font-family: open sans-serif;
-    font-size: 12px;
 }
