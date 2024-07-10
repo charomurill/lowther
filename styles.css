@@ -254,6 +254,15 @@ footer {
     margin: auto; /* Centra el contenedor en la página */
 }
 
+.container-nosotros {
+    display: flex; /* Usa flexbox para alinear la imagen y el texto en una fila */
+    flex-direction: column;
+    align-items: center; /* Alinea verticalmente en el centro */
+    padding: 30px;
+    max-width: 70%; /* Ancho máximo del contenedor */
+    margin: auto; /* Centra el contenedor en la página */
+}
+
 .container-mapas {
     display: flex; /* Usa flexbox para alinear la imagen y el texto en una fila */
     align-items: center; /* Alinea verticalmente en el centro */
